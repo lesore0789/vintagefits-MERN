@@ -1,0 +1,72 @@
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  padding: 1rem;
+  box-shadow: 0 1px 3px -2px #7a7a7a;
+}
+
+.nav-logo {
+  display: flex;
+  align-items: center;
+}
+
+.nav-logo img{
+  height: 4rem;
+}
+
+.nav-logo p {
+  font-family: "Special Elite", system-ui;
+  font-size: 2rem;
+  color: #3b3b3b;
+}
+
+.nav-menu {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  font-weight: 500;
+  font-size: 1.4rem;
+  gap: 4rem;
+}
+
+.nav-menu li {
+  color: #006D77;
+  cursor: pointer;
+}
+
+.nav-menu li:hover {
+  color:#E29578
+}
+
+.nav-login-cart {
+  display: flex;
+  align-items: center;
+  gap:3rem;
+}
+
+.nav-login-cart button {
+  width: 8rem;
+  height: 3.1rem;
+  outline: none;
+  border: 1px solid #7a7a7a;
+  border-radius: 75px;
+  color: #515151;
+  font-size: 20px;
+  font-weight: 500;
+  background: white;
+  cursor: pointer;
+}
+
+.nav-cart-count {
+  width: 22px;
+  height: 22px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: -2.188rem;
+  margin-left: -3.438rem;
+  border-radius: 0.688rem;
+  font-size: 0.875rem;
+  background: red;
+  color: white;
+}
