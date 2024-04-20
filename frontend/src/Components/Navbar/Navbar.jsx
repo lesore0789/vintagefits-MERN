@@ -1,6 +1,7 @@
 import logo from '../Assets/images/logo.png'
 import cartIcon from '../Assets/icons/cart_icon.png'
 import './Navbar.css'
+import { Link } from 'react-router-dom'
 
   const Navbar = () => {
     return (
@@ -10,13 +11,13 @@ import './Navbar.css'
           <p>Vintage Fits</p>
         </div>
         <ul className="nav-menu">
-          <li>Shop</li>
-          <li>Men</li>
-          <li>Women</li>
+          <li><Link style={{textDecoration: 'none'}} to='/'>Shop</Link></li>
+          <li><Link style={{textDecoration: 'none'}} to='/'>Men</Link></li>
+          <li><Link style={{textDecoration: 'none'}} to='/'>Women</Link></li>
         </ul>
         <div className="nav-login-cart">
-          <button>Login</button>
-          <img src={cartIcon} alt="cart icon" />
+          <Link to='/login'><button>Login</button></Link>
+          <Link to='/cart'><img src={cartIcon} alt="cart icon" /></Link>
           <div className="nav-cart-count">0</div>
         </div>
       </div>
