@@ -1,0 +1,68 @@
+.hero {
+  height: 100vh;
+  background-image: linear-gradient(to bottom, #83c5be, #9dcbb3, #bacfae, #d4d3b1, #ebd6bb, #f0d2b9, #f5cfb9, #f9cbbb, #f4bdaa, #eeb099, #e8a288, #e29578);
+  display: flex;
+}
+
+.hero-left {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 11.25rem;
+  line-height: 1.1;
+}
+
+.hero-left h2 {
+  color: #090909;
+  font-size: 1.625rem;
+  font-weight: 600;
+}
+
+.hero-left p {
+  color: #171717;
+  font-size: 5rem;
+  font-weight: 700;
+}
+
+.hero-left .hero-everyone {
+  font-size: 4.32rem;
+}
+
+.hero-latest-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.938rem;
+  width: 17.5rem;
+  height: 70px;
+  border-radius: 4.375rem;
+  margin-top: 1.875rem;
+  background: #006D77;
+  color: white;
+  font-size: 1.25rem;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.hero-right {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* .hero-right img{
+  width:100%;
+  max-width: 675px;
+  height:auto
+} */
+.hero-right img{
+  height:1200px
+}
+
+@media(max-width: 1450px){
+  .hero-right img {
+      height: 750px;
+    }
+}

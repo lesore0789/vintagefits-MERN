@@ -38,6 +38,14 @@
   color:#E29578
 }
 
+.nav-menu hr {
+  border: none;
+  width: 100%;
+  height: 3px;
+  border-radius: 10px;
+  background: #E29578;
+}
+
 .nav-login-cart {
   display: flex;
   align-items: center;

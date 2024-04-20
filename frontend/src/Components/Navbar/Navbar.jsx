@@ -2,8 +2,10 @@ import logo from '../Assets/images/logo.png'
 import cartIcon from '../Assets/icons/cart_icon.png'
 import './Navbar.css'
 import { Link } from 'react-router-dom'
+import { useState } from 'react'
 
   const Navbar = () => {
+     const [menu, setMenu] = useState('shop')
     return (
       <div className="navbar">
         <div className="nav-logo">
@@ -11,9 +13,9 @@ import { Link } from 'react-router-dom'
           <p>Vintage Fits</p>
         </div>
         <ul className="nav-menu">
-          <li><Link style={{textDecoration: 'none'}} to='/'>Shop</Link></li>
-          <li><Link style={{textDecoration: 'none'}} to='/'>Men</Link></li>
-          <li><Link style={{textDecoration: 'none'}} to='/'>Women</Link></li>
+          <li onClick={() => {setMenu('shop')}}><Link style={{textDecoration: 'none', color: '#006D77'}} to='/'>Shop</Link>{menu==='shop'?<hr/>:<></>}</li>
+          <li onClick={() => {setMenu('mens')}}><Link style={{textDecoration: 'none', color: '#006D77'}} to='/mens'>Men</Link>{menu==='mens'?<hr/>:<></>}</li>
+          <li onClick={() => {setMenu('womens')}}><Link style={{textDecoration: 'none', color: '#006D77'}} to='/womens'>Women</Link>{menu==='womens'?<hr/>:<></>}</li>
         </ul>
         <div className="nav-login-cart">
           <Link to='/login'><button>Login</button></Link>
