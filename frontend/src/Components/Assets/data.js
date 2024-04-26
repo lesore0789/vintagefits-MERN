@@ -5,28 +5,28 @@ import y11 from "./images/y11.jpg";
 
 let data_product = [
   {
-    id: 1,
+    id: 7,
     name: "PUMA Lightweight Windbreaker Colorful Striped Detail",
     image: v71,
     new_price: 50.0,
     old_price: 80,
   },
   {
-    id: 2,
+    id: 16,
     name: "Bob White Quail Flying Crew Neck Sweater",
     image: w71,
     new_price: 85.0,
     old_price: 120,
   },
   {
-    id: 3,
+    id: 30,
     name: "Westbound Geometric Jacket",
     image: y21,
     new_price: 60.0,
     old_price: 100,
   },
   {
-    id: 4,
+    id: 28,
     name: "Silk Black Abstract Shields Versace Style Bomber Jacket",
     image: y11,
     new_price: 100.0,
