@@ -52,10 +52,7 @@ export const ProductDisplay = (props) => {
         </div>
         <button>ADD TO CART</button>
         <p className="productdisplay-right-category">
-          <span>Category :</span>Women, T-shirt, Crop Top
-        </p>
-        <p className="productdisplay-right-category">
-          <span>Tags :</span>Modern, Latest
+          <span>Tags :</span> Vintage, Thrift
         </p>
       </div>
     </div>
