@@ -19,8 +19,8 @@ let data_product = [
     old_price: 120,
   },
   {
-    id: 30,
-    name: "Westbound Geometric Jacket",
+    id: 29,
+    name: "Silk Black Abstract Shields Bomber Jacket",
     image: y21,
     new_price: 60.0,
     old_price: 100,
