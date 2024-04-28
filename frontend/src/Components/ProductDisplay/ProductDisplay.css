@@ -70,12 +70,11 @@
 
 .productdisplay-right-sizes {
   display: flex;
-  margin: 1.875rem;
   gap: 1.25rem;
+  margin-top: 1.2rem;
 }
 
 .productdisplay-right-sizes div {
-  padding: 1.125rem 1.5rem;
   background: #fbfbfb;
   border: 0.063rem solid #ebebeb;
   border-radius: 0.188rem;
@@ -90,6 +89,7 @@
   color: white;
   background: #ff6d41;
   margin-bottom: 2.5rem;
+  margin-top: 2rem;
   border: none;
   outline: none;
   cursor: pointer;
@@ -101,4 +101,58 @@
 
 .productdisplay-right-category span {
   font-weight: 600;
+}
+
+svg {
+  height: 3.6rem;
+  width: 3.6rem;
+  margin: 0.8rem;
+}
+
+#radios label {
+  position: relative;
+}
+
+input[type="radio"] {
+  position: absolute;
+  opacity: 0;
+}
+
+input[type="radio"]+svg {
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+input+svg {
+  cursor: pointer;
+}
+
+input[class="small"]:hover+svg rect,
+input[class="small"]:checked+svg rect,
+input[class="small"]:focus+svg rect {
+  fill: #ffc2ae;
+}
+
+input[class="medium"]:hover+svg rect,
+input[class="medium"]:checked+svg rect,
+input[class="medium"]:focus+svg rect {
+  fill: #ffc2ae;
+}
+
+input[class="large"]:hover+svg rect,
+input[class="large"]:checked+svg rect,
+input[class="large"]:focus+svg rect {
+  fill: #ffc2ae;
+}
+
+input[class="xlarge"]:hover+svg rect,
+input[class="xlarge"]:checked+svg rect,
+input[class="xlarge"]:focus+svg rect {
+  fill: #ffc2ae;
+}
+
+input[class="xxl"]:hover+svg rect,
+input[class="xxl"]:checked+svg rect,
+input[class="xxl"]:focus+svg rect {
+  fill: #ffc2ae;
 }
