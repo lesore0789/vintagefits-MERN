@@ -1,0 +1,110 @@
+.cartitems {
+  margin: 6.25rem 10.625rem;
+}
+
+.cartitems hr {
+  height: 0.188rem;
+  background: #e2e2e2;
+  border: 0;
+}
+
+.cartitems-format-main {
+  display: grid;
+  grid-template-columns: 0.5fr 2fr 1fr 1fr 1fr 1fr;
+  align-items: center;
+  gap: 4.688rem;
+  padding: 1.25rem 0rem;
+  color: #454545;
+  font-size: 1.125rem;
+  font-weight: 600;
+}
+
+.cartitems-format {
+  font-size: 1.063rem;
+  font-weight: 500;
+}
+
+.carticon-product-icon {
+  height: 3.875rem;
+}
+
+.cartitems-remove-icon {
+  width: 0.938rem;
+  margin: 0 2.5rem;
+  cursor: pointer;
+}
+
+.cartitems-quantity {
+  width: 4rem;
+  height: 3.125rem;
+  border: 0.125rem solid #ebebeb;
+  background: white;
+}
+
+.cartitems-down {
+  display: flex;
+  margin: 6.25rem 0
+}
+
+.cartitems-total {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  margin-right: 12.5rem;
+  gap: 2.5rem;
+}
+
+.cartitems-total-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.938rem 0;
+}
+
+.cartitems-total button {
+  width: 16.375rem;
+  height: 3.625rem;
+  outline: none;
+  border: none;
+  background: #ff5a5a;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.cartitems-promocode {
+  flex: 1;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.cartitems-promocode p {
+  color: #555;
+}
+
+.cartitems-promobox {
+  width: 31.5rem;
+  margin-top: 0.938rem;
+  padding-left: 1.25rem;
+  height: 3.625rem;
+  background: #eaeaea;
+}
+
+.cartitems-promobox input {
+  border: none;
+  outline: none;
+  background: transparent;
+  font-size: 1rem;
+  width: 20.625rem;
+  height: 3.125rem;
+  font-family: "Inter", sans-serif;
+}
+
+.cartitems-promobox button {
+  width: 10.625rem;
+  height: 3.625rem;
+  font-size: 1rem;
+  background: black;
+  color: white;
+  cursor: pointer;
+}

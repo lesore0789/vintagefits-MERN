@@ -1,12 +1,14 @@
-import React, { useState } from 'react'
+import React, { useContext, useState } from 'react'
 import './ProductDisplay.css'
 import starIcon from '../Assets/icons/star_icon.png'
 import starDullIcon from '../Assets/icons/star_dull_icon.png'
+import { ShopContext } from '../../Context/ShopContext'
 
 
 export const ProductDisplay = (props) => {
   const {product} = props;
   const [selected, setSelected] = useState(product.image)
+  const {addToCart} = useContext(ShopContext)
 
   const changeImage1 = () => setSelected(product.image)
   const changeImage2 = () => setSelected(product.image2)
@@ -160,7 +162,7 @@ export const ProductDisplay = (props) => {
             <div>XXL</div> */}
           </div>
         </div>
-        <button>ADD TO CART</button>
+        <button onClick={()=>{addToCart(product.id)}}>ADD TO CART</button>
         <p className="productdisplay-right-category">
           <span>Tags :</span> Vintage, Thrift
         </p>
