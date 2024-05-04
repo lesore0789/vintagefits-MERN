@@ -26,3 +26,19 @@
   margin-left: 1.25rem;
   gap: 1.875rem;
 }
+
+@media(max-width:1200px) {
+  .collections {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+@media(max-width:920px) {
+  .collections {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media(max-width:650px) {
+  .collections {
+    grid-template-columns: 1fr;
+  }
+}
