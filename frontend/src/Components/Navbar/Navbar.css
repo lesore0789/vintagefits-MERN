@@ -3,6 +3,7 @@
   justify-content: space-around;
   padding: 1rem;
   box-shadow: 0 1px 3px -2px #7a7a7a;
+  align-items: center;
 }
 
 .nav-logo {
@@ -41,8 +42,8 @@
 .nav-menu hr {
   border: none;
   width: 100%;
-  height: 3px;
-  border-radius: 10px;
+  height: 0.188rem;
+  border-radius: 0.625rem;
   background: #E29578;
 }
 
@@ -58,9 +59,9 @@
   height: 3.1rem;
   outline: none;
   border: 1px solid #7a7a7a;
-  border-radius: 75px;
+  border-radius: 4.688rem;
   color: #515151;
-  font-size: 20px;
+  font-size: 1.25rem;
   font-weight: 500;
   background: white;
   cursor: pointer;
@@ -72,8 +73,8 @@
 }
 
 .nav-cart-count {
-  width: 22px;
-  height: 22px;
+  width: 1.375rem;
+  height: 1.375rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -83,4 +84,61 @@
   font-size: 0.875rem;
   background: red;
   color: white;
+}
+
+.nav-dropdown {
+  display: none;
+}
+
+@media(max-width:800px) {
+  .navbar {
+    padding: 0.625rem 0;
+  }
+
+  .nav-logo img {
+    height: 2.2rem;
+  }
+  .nav-logo p {
+    font-size: 1.563rem;
+  }
+
+  .nav-dropdown {
+    display: block;
+    width: 1.25rem;
+    rotate: -90deg;
+    transition: 0.5s;
+    cursor: pointer;
+    padding-bottom: -0.938rem;
+  }
+
+  .nav-menu {
+    display: none;
+    height: 5rem;
+    width: 100%;
+    position: absolute;
+    background-color: white;
+    justify-content: center;
+    top: 3.125rem;
+    gap: 1.563rem;
+    font-size: 0.875rem;
+  }
+
+  .nav-login-cart button {
+    width: 5rem;
+    height: 2.188rem;
+    font-size: 0.875rem;
+  }
+
+  .nav-cart-count {
+    width: 1.125rem;
+    height: 1.125rem;
+  }
+
+  .nav-menu-visible {
+    display: flex;
+  }
+
+  .nav-dropdown.open {
+    transform: rotate(90deg);
+  }
 }
